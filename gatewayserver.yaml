@@ -1,5 +1,5 @@
 server:
-  port: {SERVER_PORT_GATEWAY:1002}
+  port: ${SERVER_PORT_GATEWAY:1002}
 eureka:
   instance: 
     preferIpAddress: true
