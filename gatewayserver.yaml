@@ -1,2 +1,10 @@
 server:
   port: {SERVER_PORT_GATEWAY:1002}
+eureka:
+  instance: 
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: "http://${ADDRESS_IP_EUREKA}:${SERVER_PORT_EUREKA}/eureka/
